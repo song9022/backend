@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1ED40A85-3098-AC2C-2547-941ADB26FE8E" name="transcationDetail">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>486C5AC1-F605-6231-3730-AF7604071B46</importedID>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="detail_id" id="238412F1-5DA2-B9F2-D9D7-80C0A44BEFD1">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>DBE64CB9-D7D3-0DD3-8403-58E41C41ACB5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="61AC9ED3-8F6A-5240-A8BB-C6611F130D12">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>DD685D85-B9D2-08A7-D465-DE047CBFC320</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_price" id="73922AE8-597C-11D2-613C-CF11281961B0">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>C617B7EC-9B44-CB4F-A742-FC018904B5B0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="666C41BF-01B0-C8E3-07EE-D3D9A9616019" name="transcationDetail_PK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>5D22A481-48F8-6DE3-D45D-14EF12F7D6AD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="238412F1-5DA2-B9F2-D9D7-80C0A44BEFD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

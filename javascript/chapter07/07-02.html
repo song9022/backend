@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //07-02.html
+    function test(){
+      try{
+        console.log("A 위치입니다")
+        //예외를 강제로 발생 시킵니다
+        throw "예외 강제 발생"
+      }catch(exception){
+        console.log("B 위치입니다")
+        return
+      }
+      console.log("C 위치입니다")
+    }
+    test()
+    //함수 내부에 try catch문이 있고
+    //return키워드를 사용하는 경우
+    //반복문에서 try catch문이 있고
+    //break또는 continue키워드를 만날 때
+    function test1(){
+      try{
+        console.log("A 위치입니다")
+        //예외를 강제로 발생 시킵니다
+        throw "예외 강제 발생"
+      }catch(exception){
+        console.log("B 위치입니다")
+        return
+      }finally{
+        console.log("C 위치입니다")
+      }
+    }
+    test1()
+
+  </script>
+</body>
+</html>

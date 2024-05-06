@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //08-01-05.html
+    //객체를 생성하는 함수
+    function createStudent(name,kor,eng,math,sci){
+      return{
+        //속성
+        name:name,
+        kor:kor,
+        eng:eng,
+        math:math,
+        sci:sci,
+        //메소드
+        getSum(){
+          return this.kor+this.eng+this.math+this.sci
+        },
+        getAverage(){
+          return this.getSum()/4
+        },
+        toString(){
+          return `${this.name}\t${this.getSum()}점\t${this.getAverage()}점\n`
+        }
+      }
+    }
+    //객체를 복제해서 만들 수 있다
+    const students=[]
+    students.push(createStudent("구름",87,98,88,90))
+    students.push(createStudent("별이",92,98,96,88))
+    students.push(createStudent("겨울",76,96,94,86))
+    students.push(createStudent("바다",98,52,98,92))
+
+    let output="이름\t총점\t평균\n"
+    for(const s of students){
+      output+=s.toString()
+    }
+    console.log(output)
+    //객체를 하나하나 만들 때와 비교해서
+    // - 오탈자의 위험이 줄어듭니다
+    // - 코드를 입력하는 양이 크게 줄어듭니다
+    // - 속성과 메소드를 한 함수 내부에서 관리할 수 있으므로
+    // 객체를 더 손쉽게 유지 보수할 수 있습니다
+  </script>
+</body>
+</html>

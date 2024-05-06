@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44183880-19B6-33DD-DF53-BA9F9D46A1AF" name="region">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>3C93D652-B9C0-BE62-7D17-9CC2B2E59879</importedID>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="region_id" id="AB24AAA8-2D8C-613A-BF34-B7CB262A82AA">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>89EF8C8F-6D93-DE27-921F-A14CC3B1E32E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="CC75C91E-CD55-CB74-4AED-F27C88982B8C">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>C1754C11-1CEF-AC3F-B87A-27F3C8D7BC44</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89D58F9C-55AC-A026-5E9C-05EAF13A3B52" name="region_PK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>6EBBCBDB-F965-3AE7-1726-B923C812876C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB24AAA8-2D8C-613A-BF34-B7CB262A82AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

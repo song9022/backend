@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //for001.html
+    //할일 앱, todo app
+    //우유 구매, 업무 메일 확인하기, 필라테스 수업
+    const todos=["우유 구매","업무 메일 확인하기","필라테스 수업"]
+    // console.log(todos[0])
+    // console.log(todos[1])
+    // console.log(todos[2])
+    // todos.splice(2,1)
+    // console.log(todos[0])
+    // console.log(todos[1])
+    //할일 전체 출력하기
+    for(let i=0;i<todos.length;i++){
+      console.log(todos[i])
+    }
+    todos.splice(2,1)
+    for(let i=0;i<todos.length;i++){
+      console.log(todos[i])
+    }
+    //for문을 조금이라도 편하게 쓰게 하기 위해서
+    //for of문
+    //할일 목록 출력하기
+    //for of문은 앞에 선언하는 변수에 요소가 순차적으로 대입
+    for(let todo of todos){
+      console.log("for of문",todo)
+    }
+    //할일 목록 출력할때 번호와 함께 출력하기
+    let count=1
+    for(let todo of todos){
+      console.log(`${count++}. ${todo}`)
+    }
+    //for in 문
+    //for in문은 앞에 선언하는 변수에 인덱스가 순차적으로 대입
+    for(let count in todos){
+      console.log(`${count+1}. ${todos[count]}`)
+    }
+  </script>
+</body>
+</html>

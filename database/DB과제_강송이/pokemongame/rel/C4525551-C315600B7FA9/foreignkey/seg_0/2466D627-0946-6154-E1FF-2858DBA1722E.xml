@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2466D627-0946-6154-E1FF-2858DBA1722E" containerWithKeyObject="B4DA8EC3-B18B-9B0E-77B6-ACE2A34543EB" localFKIndex="237E1885-FEBA-CFA5-DF6E-748041C6DAF7" name="Appointment_Patient_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>E995F698-F251-E2E5-F167-2A29809B410E</importedID>
+<referredTableLongName>Patient</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E7FA5110-9F6B-508D-9672-90F15F29D79B</referredTableID>
+<keyObject>14211A95-1BFB-7993-5FBD-15F79466E3BA</keyObject>
+<referredKeyID>14211A95-1BFB-7993-5FBD-15F79466E3BA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PatientID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="476875F8-E7CB-5E64-93DD-C5BA0F2562A4" name="pokemon">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:06:25 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pokemon_id" id="10F6FC22-52E2-BA06-140C-3E899DE98227">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="592043AC-8284-A572-4E64-34027BC9ED3A">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="F84FB5C1-A5DD-55C2-5523-91B354F5F841">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="level" id="D2D5F79B-FFDC-7D3D-56DE-9D80057BA9C1">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exp" id="4F56544E-D993-0D60-37D4-750C34F5396D">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hp" id="D60207CB-2B83-9D2D-6619-3D37DB7D6815">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attack" id="F50B61F7-A589-53C8-DA69-CBA74532619D">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="defense" id="E8300641-7A2A-F573-E716-C99B37580A57">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ability" id="47853C9D-A849-7A31-E7F6-4CEB600FFED2">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_player_id" id="CE5916CE-DB44-9957-0DE5-C91DEC381988">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:26:26 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE9F00B4-D07C-7990-8DD0-F68F90B331E7" referredColumn="6E1E206A-DB8B-4ADE-4525-F4F2DC4EE4CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CC0F269-13D4-5444-845F-409422035D5F" name="pokemon_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:54 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10F6FC22-52E2-BA06-140C-3E899DE98227"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C86CC34C-C634-ABE1-2BEF-164DBA8890C7" name="pokemon_player_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:26:26 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE5916CE-DB44-9957-0DE5-C91DEC381988"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

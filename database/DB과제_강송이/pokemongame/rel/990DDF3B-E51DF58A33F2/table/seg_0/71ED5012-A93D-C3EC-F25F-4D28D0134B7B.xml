@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71ED5012-A93D-C3EC-F25F-4D28D0134B7B" name="skill">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:16:59 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="skill_id" id="0115B581-F9D4-38A9-9719-3C4CAA0E0DED">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:17:56 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="0B784A1C-2302-B238-5A8A-9C92D7BED263">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:17:56 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="24B5110B-98D7-CAF3-E099-2917FA82F318">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:17:56 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effect" id="B8035462-E438-C97F-97B7-DCDA6D2F51A6">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:17:56 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pokemon_pokemon_id" id="D234F31B-D420-89AA-6656-92DBE891D002">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:27:22 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B44750F-0938-B939-659A-86188AF3C77D" referredColumn="10F6FC22-52E2-BA06-140C-3E899DE98227"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B1191F9-2E28-2C10-2C58-00954A62FFEF" name="skill_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:18:02 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0115B581-F9D4-38A9-9719-3C4CAA0E0DED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="163F400E-353B-3BF2-B501-E4262485AD41" name="skill_pokemon_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:27:22 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D234F31B-D420-89AA-6656-92DBE891D002"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

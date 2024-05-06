@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //08-02-08.html
+    //static 속성과 메소드
+    //static 속성과 메소드는 인스턴스를 만들지 않고 사용할 수
+    //있는 속성과 메소드입니다
+    class Square{
+      static runStatic(){
+        console.log("runStatic 메소드 호출 됨")
+      }
+    }
+    Square.runStatic()
+    //스태틱 메소드를 가진 기본 라이브러리
+    Array.isArray([])
+    Math.random()
+
+    //오버라이드
+    class LifeCycle{
+      call(){
+        this.a()
+        this.b()
+        this.c()
+      }
+      a(){console.log("a()메소드를 호출합니다.")}
+      b(){console.log("b()메소드를 호출합니다.")}
+      c(){console.log("c()메소드를 호출합니다.")}
+    }
+    class Child extends LifeCycle{
+      a(){
+        console.log(`자식의 a()메소드입니다.`)
+      }
+    }
+    new Child().call()
+  </script>
+</body>
+</html>

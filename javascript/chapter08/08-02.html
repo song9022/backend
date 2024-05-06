@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //08-02.html
+    //상속
+    //Rectangle 클래스
+    class Rectangle{
+      constructor(width,height){
+        this.width=width
+        this.height=height
+      }
+      //사각형의 둘레를 구하는 메소드
+      getPerimeter(){
+        return 2*(this.width+this.height)
+      }
+      //사각형의 넓이를 구하는 메소드
+      getArea(){
+        return this.width*this.height
+      }
+    }
+    const rectangle=new Rectangle(10,20)
+    console.log(`사각형의 둘레:${rectangle.getPerimeter()}`)
+    console.log(`사각형의 넓이:${rectangle.getArea()}`)
+    //도형을 더 추가하고 싶어서 Square라는 이름의
+    //정사각형을 나타내는 클래스를 추가합니다
+    class Square{
+      constructor(length){
+        this.length=length
+      }
+      //정사각형의 둘레를 구하는 메소드
+      getPerimeter(){
+        return 4*this.length
+      }
+      //정사각형의 넓이를 구하는 메소드
+      getArea(){
+        return this.length*this.length
+      }
+    }
+    const square=new Square(10)
+    console.log(`정사각형의 둘레:${square.getPerimeter()}`)
+    console.log(`정사각형의 넓이:${square.getArea()}`)
+    //비슷한 클래스를 분리하는 것이 클래스를 활용하는
+    //쪽에서는 편리합니다
+    //분리하면 클래스 선언 부분이 복잡해지는 문제가 발생합니다
+    //이런 문제를 해결하기 위해 나온 것이 상속입니다
+    //상속이란
+    //클래스의 선언 코드를 중복해서 작성하지 않도록 함으로써
+    //코드의 생산 효율을 올리는 문법입니다
+    //class 클래스이름 extends 상위클래스이름{}
+    //상속은 어떤 클래스가 가지고 있는 속성과 메소드를
+    //다른 클래스에게 물려주는 형태로 사용합니다
+    //주는 클래스를 상위클래스, 부모클래스, Super class
+    //받는 클래스를 하위클래스, 자식클래스, Sub class
+  </script>
+</body>
+</html>

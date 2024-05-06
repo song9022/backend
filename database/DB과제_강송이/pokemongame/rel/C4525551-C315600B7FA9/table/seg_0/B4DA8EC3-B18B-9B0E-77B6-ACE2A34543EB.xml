@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4DA8EC3-B18B-9B0E-77B6-ACE2A34543EB" name="Appointment">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>5A193784-7E75-89AB-2139-26D7CA822F97</importedID>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AppointmentID" id="306E0EE8-53EF-0BFB-4A57-4CA3FE854281">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>63871DB4-8B67-101C-245F-710102A12692</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AppointmentDateTime" id="3F6F1862-1D35-6A91-63CC-906E76512C28">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>50265FF9-BEB6-20DC-E135-4A630EC11155</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Purpose" id="3615A091-46FD-3955-4964-2B47D742BB2F">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>E54E181A-0260-AD85-8C4D-545E11ABDE9E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Patient_PatientID" id="DA00CBA4-71DD-C448-7CF1-CBE176C749A4">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>7242B592-555B-853A-0840-88DBE09E98B5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2466D627-0946-6154-E1FF-2858DBA1722E" referredColumn="56480DBD-32DC-EB66-1ED9-8BC167101433"/>
+</associations>
+</Column>
+<Column name="Doctor_DoctorID" id="ECAA2CAF-A362-69F1-03F5-4545ED9C8D6F">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>A3212698-71DA-EA85-34B3-BED9E28F20CF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F9C7B33-767A-36AD-C697-E9FB627F69D1" referredColumn="08F96E61-6E4D-91BC-D5F5-D6357A912717"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46181AAB-36F7-E3FF-B3AB-65A371AEE6EB" name="Appointment_PK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>3B739EF2-DF38-3DD0-4F60-52E883F298C0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="306E0EE8-53EF-0BFB-4A57-4CA3FE854281"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9292B00A-8EA2-DFB1-3623-F4512CE28381" name="Appointment_Doctor_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECAA2CAF-A362-69F1-03F5-4545ED9C8D6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="237E1885-FEBA-CFA5-DF6E-748041C6DAF7" name="Appointment_Patient_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA00CBA4-71DD-C448-7CF1-CBE176C749A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

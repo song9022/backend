@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //08-02-05.html
+    //private 속성 사용하기
+    class Square{
+      #length
+      constructor(length){
+        if(length<=0){
+          throw "길이는 0보다 커야 합니다."
+        }
+        this.#length=length
+      }
+      //정사각형의 둘레를 구하는 메소드
+      getPerimeter(){
+        return 4*this.#length
+      }
+      //정사각형의 넓이를 구하는 메소드
+      getArea(){
+        return this.#length*this.#length
+      }
+    }
+    //private속성은 클래스 외부에서는 해당 속성에 접근할 수 없습니다
+    const square=new Square(10)
+    //외부에서는 접급할 수 없다라는 오류가 발생한다
+    // square.#length=-10
+    console.log(`정사각형의 둘레:${square.getPerimeter()}`)
+    console.log(`정사각형의 넓이:${square.getArea()}`)
+
+    //=>private 속성은 클래스 외부에서는 접근할 수 없으므로
+    //클래스 사용자가 클래스를 잘못 사용하는 문제를 줄일 수 있습니다
+
+  </script>
+</body>
+</html>

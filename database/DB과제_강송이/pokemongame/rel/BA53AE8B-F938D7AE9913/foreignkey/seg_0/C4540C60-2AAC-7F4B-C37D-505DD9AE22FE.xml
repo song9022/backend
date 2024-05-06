@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4540C60-2AAC-7F4B-C37D-505DD9AE22FE" containerWithKeyObject="80E13CCE-7726-94DD-DDAE-D5371A360D69" localFKIndex="8F06324B-4BF7-1645-BB55-A326F3B04BFB" name="transaction_Region_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:19:31 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<referredTableLongName>Region</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A410ABAE-2B81-A15E-4680-68B0E8083972</referredTableID>
+<keyObject>78F789B9-10D2-EAA8-2DFE-A5AA0B11A173</keyObject>
+<referredKeyID>78F789B9-10D2-EAA8-2DFE-A5AA0B11A173</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>region_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

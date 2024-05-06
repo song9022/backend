@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE3636DE-71B7-9A56-7873-874FD1B18AC2" name="shop">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:23:18 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shop_id" id="FE595C4A-28D1-25F9-0F08-55EC6BED04B2">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:24:18 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="0853B82E-D715-A479-65AF-6B18CE3251B9">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:24:18 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="DDED34B9-EA03-6D8A-69B0-13C381F3BF44">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:24:43 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D5D8A20-389A-47FA-D9C4-6482BB9FCAEF" name="shop_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:24:18 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE595C4A-28D1-25F9-0F08-55EC6BED04B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

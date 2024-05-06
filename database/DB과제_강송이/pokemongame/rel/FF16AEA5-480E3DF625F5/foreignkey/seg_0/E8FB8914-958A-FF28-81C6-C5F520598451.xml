@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E8FB8914-958A-FF28-81C6-C5F520598451" containerWithKeyObject="F63D9E74-059F-6F11-11B7-3A220CD75E59" localFKIndex="427FA42F-0D87-C345-6B9B-14D3058CE6A7" name="pokemon_player_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>1B3FB021-938E-4447-5617-F4DF768C9E1D</importedID>
+<referredTableLongName>player</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>19CE0BD2-5704-F9F1-079F-AD8A732C1FCC</referredTableID>
+<keyObject>6FA3B440-8B83-4D54-C52E-10AC55A963C7</keyObject>
+<referredKeyID>6FA3B440-8B83-4D54-C52E-10AC55A963C7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>player_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

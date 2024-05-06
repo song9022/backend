@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //08-02-07.html
+    //속성 값을 확일 할 때 사용하는 메소드 게더
+    //속성에 값을 지정할 때 사용하는 메소드 세더
+    //이러한 형태의 코드를 수많은 개발자들이
+    //사용하다 보니 더 쉽게 작성하고 사용할 수 있도록
+    //get 키워드와 set키워 문법을 제공합니다
+    /*
+      class 클래스이름{
+        get 이름(){return 값}
+        set 이름(value){}
+      }
+    */
+    class Square{
+      #length
+      constructor(length){
+        this.length=length
+      }
+      set length(value){
+        if(value<=0){
+          throw "길이는 0보다 커야 합니다."
+        }
+        this.#length=value
+      }
+      get length(){
+        return this.#length
+      }
+      getPerimeter(){
+        return 4*this.#length
+      }
+      getArea(){
+        return this.#length*this.#length
+      }
+    }
+    const square=new Square(10)
+    // square.length=-10
+    //속성을 private으로 지정하고
+    //set 메소드를 만들어 주면
+    //속성을 직접 접근하는 형태로 쓰더라도
+    //set 메소드가 내부적으로 실행 된다
+    // const square1=new Square(-10)
+    //내외부 상관없이 직접접근 하더라도 set 키워드로 만들어진
+    //setter 메소드가 실행된다
+
+    console.log("글자수 확인".length)
+    //=>자바스크립트에서는 모양은 속성에 직접접근하는 것처럼
+    //사용하지만 내부적으로 getter, setter 메소드가 실행되는
+    //것이므로 객체 지향 관점에 벗어 나지 않는다
+  </script>
+</body>
+</html>

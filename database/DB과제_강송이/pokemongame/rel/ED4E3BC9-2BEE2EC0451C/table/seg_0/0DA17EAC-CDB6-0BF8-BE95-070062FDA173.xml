@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DA17EAC-CDB6-0BF8-BE95-070062FDA173" name="Appointment">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:33:10 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AppointmentID" id="3CEAA207-87ED-99B7-BF13-8F39FB863462">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:33:45 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AppointmentDateTime" id="EB250B23-B418-4947-3901-8215FED3E5A7">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:38:51 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Purpose" id="18C159AF-469D-9215-18D8-89360D509646">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:38:51 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Patient_PatientID" id="10BA8973-D31D-FFD4-D301-E016DB893447">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:36:55 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA3636ED-52DC-A9AF-719E-F063AC251AF2" referredColumn="0340BFA7-DFF9-3C4F-E8F3-A44CC62E58C6"/>
+</associations>
+</Column>
+<Column name="Doctor_DoctorID" id="26C52D72-4820-5D66-ACB1-BA335CD0F6BC">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:36:58 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B79F6C07-0EDE-F6E4-68A4-26060031A71F" referredColumn="19D857DB-96D9-5974-02A5-4FB9E6AFDCAE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A969B5B7-E4E2-6F74-08AA-921F4BBD74E3" name="Appointment_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:34:53 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CEAA207-87ED-99B7-BF13-8F39FB863462"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48FF39E8-C51F-9582-666E-CF445869839F" name="Appointment_Patient_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:36:55 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10BA8973-D31D-FFD4-D301-E016DB893447"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F163AB9B-A9AF-5E06-C575-2B9309F3C48C" name="Appointment_Doctor_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:36:58 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26C52D72-4820-5D66-ACB1-BA335CD0F6BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

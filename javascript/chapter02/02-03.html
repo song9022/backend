@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //02-03.html
+    //자료형 변환
+    //문자열과 숫자를 숫자 연산으로 하고 싶은 경우
+    console.log("100"+10)
+    //의도는 110 출력은 10010
+    //양변의 하나라도 문자열이면 
+    //문자열 연결 연산자로 우선 처리 된다
+    console.log("100"*10)
+    //-,*,/,%는 문자열 연산은 안되므로
+    //내부적으로 자동 형 변환되어 숫자 연산이 되었다
+
+    //문자열 입력
+    //문자열 자료형을 입력할 때 브라우저와 상호작용해서 동작하는
+    //prompt()라는 메소드가 있다
+    //prompt(메시지 문자열, 기본 입력 문자열)
+
+    // const input=prompt("message","_default")
+    // const input=prompt("아무거나 입력해보세요")
+    // console.log(input)
+    
+    //불린 입력
+    //confirm(메시지 문자열)
+    //확인 클릭시 true리턴, 취소를 클릭시 false리턴
+    // const result=confirm("수락하시겠습니까?")
+    // console.log(result)
+
+    //숫자 자료형으로 변환하기
+    //Number(자료)
+    console.log("273")
+    console.log(typeof(Number("273")))
+    let l1="273"
+    console.log(typeof(l1))//string
+    l1=Number(l1)
+    console.log(typeof(l1))//number
+
+    //다른 문자가 들어 있어서 숫자로 변환할 수 없는 문자열의 경우
+    //NaN(Not a Number)라는 값을 출력합니다
+    //NaN - 숫자로 나타낼 수 없는 숫자를 의미
+    console.log(Number("$273"))//NaN
+    let l2=Number("$273")
+    console.log(l2)//NaN
+    console.log(typeof(l2))//자료형은 number
+
+    //불린도 숫자형으로 변환 가능 하다
+    console.log(Number(true))
+    console.log(Number(false))
+
+    // + 연산자의 경우 문자열 연산자가 우선 처리 되므로
+    let hundred="100"
+    let num=10
+    let re=Number(hundred)+num
+    console.log(re)//110
+
+    //숫자 연산자를 사용해 자료형 변환하기
+    console.log(typeof("52"-0))
+    console.log(typeof(true-0))
+    console.log(typeof(false-true+true))
+
+    //문자열 자료형으로 변환하기
+    //String(자료)
+    console.log(String(52.273))
+    console.log(String(true))
+    console.log(String(false))
+
+    //문자열 연산자를 사용해 자료형 변환하기
+    //다른 자료에 빈 문자열을 연결하여 문자열 자료형으로 변환
+    console.log(273+"")
+    console.log(true+"")
+
+    //불 자료형으로 변환하기
+    //Boolean(자료)
+
+    //대부분의 자료는 불로 변환했을 때 true로 변환됩니다
+    console.log(Boolean(273))
+    console.log(Boolean("273"))
+    console.log(Boolean(3.14195))
+    //5개의 자료형은 false로 변환됩니다
+    console.log(Boolean(0))
+    console.log(Boolean(NaN))
+    console.log(Boolean(""))
+    console.log(Boolean(null))
+    console.log(Boolean(undefined))
+    
+    //논리 부정 연산자를 사용해 자료형 변환하기
+    //논리 부정 연산자(!)
+    //2번 사용하면 불 자료형으로 변환
+    console.log(!!undefined)
+    console.log(!!42)
+    console.log(!!0)
+    console.log(!!"안녕하세요")
+    console.log(!!"")
+    console.log(!!'')
+    console.log(!!``)
+
+  </script>
+</body>
+</html>

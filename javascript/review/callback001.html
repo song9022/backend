@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //callback001.html
+    //매일 걸음수 저장하는 프로그램
+    class WalkCount{
+      #date
+      #walkCnt
+      get date(){
+        return date
+      }
+      set date(date){
+        console.log("set date () 함수가 호출 되었습니다")
+        this.#date=date
+      }
+      get walkCnt(){
+        return walkCnt
+      }
+      set walkCnt(walkCnt){
+        this.#walkCnt=walkCnt
+      }
+      //출력
+      printWC(){
+        console.log("----------날짜----------")
+        console.log(this.#date)
+        console.log("----------걸음 수----------")
+        console.log(this.#walkCnt)
+      }
+
+      //콜백 출력 함수
+      printWithCallback(callback){
+        callback(this.#date,this.#walkCnt)
+      }
+    }
+    const ex={
+      "date":"4월 3일",
+      "walkCnt":10000
+    }
+    //온점찍고 속성에 직접접근해서 쓰지만 get set 함수 호출 됨
+
+    //걸음수를 날짜로 저장하는 함수
+    const wcArr=[]
+    function createWC(date,walkCnt){
+      const wc=new WalkCount();
+      wc.date=new Date(date)
+      wc.walkCnt=walkCnt
+      wcArr.push(wc)
+    }
+    function getWCs(){
+      for(const wc of wcArr){
+        wc.printWC()
+      }
+    }
+    createWC("2024-04-01",5001)
+    createWC("2024-04-02",5002)
+    createWC("2024-04-03",5003)
+    //이번 달 걸음수 출력
+    getWCs()
+
+    //콜백 함수 사용
+    const wc1=wcArr[0]
+    wc1.printWC()
+    wc1.printWithCallback((d,w)=>{
+      console.log(`날짜:${d}`)
+      console.log(`걸음수:${w}`)
+    })
+    const numbers=[1,2,3]
+    numbers.forEach(v=>{
+      console.log(v)
+    })
+    wc1.printWithCallback((d,w)=>{
+      console.log(`날짜::::::::::::${d}`)
+      console.log(`걸음수:::::::::::${w}`)
+    })
+    setInterval(()=>{
+      console.log("3초 마다 실행")
+    },3000)
+    //{...객체}
+    console.log(WalkCount)
+    //[...배열]
+    for(const wc of wcArr){
+      console.log(wc)
+    }
+    //따라 만들어 보기
+    //코딩테스트 - 알고리즘 창조()
+    //코딩테스트 500문제 답을 보면서 계속 따라 만들기
+    
+  </script>
+</body>
+</html>

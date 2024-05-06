@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7245C2F8-EAF4-FCCB-0EEB-9B859CD969AE" name="transcationDetail">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:43:10 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="detail_id" id="BCB3E6CA-D77B-2FE0-FE7A-5C3791C88063">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:44:21 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="7E0B30EE-60A1-2190-30A8-7B58C1E5CCCE">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:44:21 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_price" id="80F2FE52-05F6-3492-0777-943FF7BDD6D8">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:44:21 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F70362F9-0F2C-D0A7-D988-D15CC3767D48" name="transcationDetail_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:44:21 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCB3E6CA-D77B-2FE0-FE7A-5C3791C88063"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DFB7BBAF-AD4C-1130-9A85-D6E447AAF229" name="battle">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>E02C7EF0-4A6E-ED5D-423C-C999B2820176</importedID>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="battle_id" id="FA3A518B-5515-EBAE-698D-F5AEC3EA35A3">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>E785105E-3561-CCA0-2772-2278F5C522B2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="result" id="018B00EB-4EC8-18F2-A215-995B99718418">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>E701C982-7D38-8E74-F7C0-7DB9618C5511</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pokemon_pokemon_id" id="E7E1B2A6-518C-7B85-4A76-E7C006377AC5">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>163E42AE-6A9F-B01C-ACB0-BCD545A90536</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F464BFE-2BB4-7D65-7BDC-76B715446420" referredColumn="D3A59ADB-93B1-5A47-0A80-8577BC4F36B1"/>
+</associations>
+</Column>
+<Column name="player_player_id" id="475A794E-C6A2-2E42-D721-3BF4E288423B">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>3AFDD081-E408-8213-AA25-C22FE50C82C1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28C007DF-A78F-630E-748B-EC4E19571EC6" referredColumn="63D421E7-ECF1-119C-A42A-857445D57CA2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C8A9D5E-DF9B-8803-FD1F-63094B97DAEB" name="battle_PK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>00FD358D-D93D-735A-D94C-90A50376C7C1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA3A518B-5515-EBAE-698D-F5AEC3EA35A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE8D4948-24F8-44F9-E78F-3B1532A8B37D" name="battle_pokemon_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7E1B2A6-518C-7B85-4A76-E7C006377AC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E2D5508-E3D1-1F2A-9DDE-A68D30D15D5E" name="battle_player_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="475A794E-C6A2-2E42-D721-3BF4E288423B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

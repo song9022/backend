@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //02-02.html
+    //상수와 변수
+    //상수 - 항상 같은 수라는 의미로 값에 이름을 한 번 붙이면
+    //값을 수정할 수 없습니다
+    //변수 - 변할 수 있는 수로 값을 수정할 수 있습니다
+
+    //실제로는 상수를 훨씬 많이 사용합니다
+    //저장 효율(성능)이 좋다
+
+    //상수(constant)
+    //const 이름 = 값
+    const pi=3.141592
+    console.log(pi)
+    console.log(pi+4)
+    const r=10
+    console.log(2*pi*r)
+    console.log(pi*r*r)
+    //숫자가 들어 잇는 상수는 숫자 연산
+    //문자열이 들어 있는 상수는 문자열 연산
+
+    //특정한 이름의 상수는 한 파일에서 한 번만 선언 할 수 있다
+    const name="name이라는 상수를 선언"
+    // const name="한 번 더 선언해볼게요"
+    //Identifier 'name' has already been declared
+    //식별자 name은 이미 사용되고 있습니다라는 오류(구문 오류)
+
+    //상수를 선언(정의)할 때 반드시 값을 함께 지정해줘야 합니다
+    //값을 처음 지정 - 초기화
+    //상수는 선언과 초기화를 동시에 해야 한다
+    // const p
+    //Missing initializer in const declaration
+    const p=3.14
+
+    //한 번 선언된 상수의 자료는 변경할 수 없습니다
+    const studentName="김자바"
+    // studentName="김스크립트"
+    //Assignment to constant variable.
+    //값을 변경하고 싶을 때는 변수를 사용해야 한다
+
+    //변수
+    //변수를 만들 때는 let키워드를 사용합니다
+    //let 이름=값
+    let pi1=3.141592
+    console.log(pi1)
+    let r1=10
+    console.log(2*pi1*r1)
+    console.log(pi1*r1*r1)
+
+    //변수의 값을 변경할 때는 변수 이름 뒤에 =기호를 입력하고
+    //값을 넣어 주면 됩니다
+    //변수 = 값
+    let g=9.8
+    let m=10
+    console.log(m*g)
+    g=9.80665
+    console.log(m*g)
+
+    //특정한 이름의 변수는 한 파일에서 한 번만 선언할 수 있습니다
+    let name1="name1이라는 이름의 변수를 선언"
+    // let name1="한 번 더 선언한다"
+    //Identifier 'name1' has already been declared
+    let name2="한 번 더 선언한다"
+
+    //var키워드
+    var name3="이름"
+    //변수를 생성할 수 있는 키워드
+    //과거에 사용하던 키워드
+    //var키워드는 변수를 중복해서 선언할 수 있다는 위험성
+    //변수가 속하는 범위가 애매하다는 이유로 
+    //let 키워드가 등장하면서 대체되었습니다
+
+    //복합 대입 연산자
+    // += -> 기존 변수의 값에 값을 더합니다
+    // -=,*=,/=,%=
+    let a=0
+    a=a+1
+    a+=1
+    console.log(a)
+
+    //증감 연산자
+    //변수++ , 변수--, ++변수, --변수
+    //prefix(전위), postifx(후위)
+    let number=10
+    ++number
+    number++
+    console.log(number)
+
+    console.log(number++)//
+    console.log(number++)//
+    console.log(number++)//
+    console.log(number)//
+    number +=1//=== ++number number--
+    //후위가 해당 문장을 실행한 후 값을 더하는 것
+    //해당 문장을 실행하기 전에 값을 더하는 것이 전위
+
+    let num=10
+    console.log(num++)//10
+    console.log(++num)//12
+    console.log(num--)//12
+    console.log(--num)//10
+    //예측한 결과가 맞았다면 증감 연산자를 완벽히 이해 했다
+
+    //undefined 자료형
+    if(typeof(num)!==undefined){
+
+    }
+    //상수와 변수로 선언하지 않은 식별자
+    //=>undefined 자료형이 나옵니다
+    console.log(typeof(abc))
+    console.log(typeof(문자열))
+    //백팁(`) 감싼것도 문자열
+    console.log(typeof(`문자열 타입`))
+
+    //값이 없는 변수 =>undefined 자료형이 나옵니다
+    //변수를 선언하면서 값을 지정하지 않은 경우
+    //상수는 선언할 때 반드시 값을 지정해야 하므로
+    //값이 없는 상수는 존재하지 않습니다
+    let v
+    console.log(typeof(v))
+
+  </script>
+  <img src="cat.jpg">
+</body>
+</html>

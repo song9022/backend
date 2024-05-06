@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="pokemongame" id="C80AF372-2D5A-73E4-9B06-7EE8F146105F" version="3.5">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:38:09 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C80AF372-2D5A-73E4-9B06-7EE8F146105F</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="1BBBAE78-2E8F-F5E9-8889-1A8086FD5CF1">
+<designStoragePath>C:\Users\송이\Desktop\Assignment\pokemongame</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="69D5624B-4FD4-6C86-F4D9-B5178E462646">
+<designStoragePath>C:\Users\송이\Desktop\Assignment\pokemongame</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="game(2)" id="FF16AEA5-C6FA-E6DC-4FD2-480E3DF625F5" mainViewID="AB8D346A-4164-874C-D00D-392AB4D4521E">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:02 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

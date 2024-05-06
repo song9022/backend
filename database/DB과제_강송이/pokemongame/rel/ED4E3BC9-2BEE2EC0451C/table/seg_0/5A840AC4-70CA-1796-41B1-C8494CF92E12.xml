@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A840AC4-70CA-1796-41B1-C8494CF92E12" name="MedicalRecord">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:28:12 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RecordID" id="D9ADD89A-6706-2576-F71A-D6D4CC2E2D23">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:33:00 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date" id="C9381506-EB13-6C5F-EC37-6AE182EE7164">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:33:00 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Diagnosis" id="C335E2DC-7432-5B40-CC38-C9D135F3B9DD">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:33:00 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prescription" id="15B7172D-AAA7-B606-9B8E-BEC605150B58">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:33:00 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Patient_PatientID" id="9AB1B641-970B-2F04-703D-F6B80870EE80">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:35:34 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A7BCDF5-98DB-7DCF-65FA-32021D742937" referredColumn="0340BFA7-DFF9-3C4F-E8F3-A44CC62E58C6"/>
+</associations>
+</Column>
+<Column name="Doctor_DoctorID" id="6E198CEF-435B-E145-FC82-14D9387C096E">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:35:48 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="269AEC8F-7A7F-C8C6-9529-0AB0EDC23DDF" referredColumn="19D857DB-96D9-5974-02A5-4FB9E6AFDCAE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A9505ED-52B1-18CD-580A-3050CA51E6F1" name="MedicalRecord_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:33:00 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9ADD89A-6706-2576-F71A-D6D4CC2E2D23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEC8C816-123A-C04B-8B9E-356368B7D103" name="MedicalRecord_Patient_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:35:34 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB1B641-970B-2F04-703D-F6B80870EE80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05C5F077-EE4A-4B56-CA56-395F0B7D6089" name="MedicalRecord_Doctor_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 03:35:48 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E198CEF-435B-E145-FC82-14D9387C096E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

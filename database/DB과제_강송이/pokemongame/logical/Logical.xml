@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="A147A579-A1FC-B8E7-EDAF-C43AAD664020" mainViewID="1F2586DC-FFAB-36B5-EA3D-634FC367A15C">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:38:09 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

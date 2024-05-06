@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //07-03.html
+    //예외 처리 고급
+    //예외 객체
+    //예외 객체의 속성
+    //name - 예외 이름
+    //message - 예외 메세지
+    try{
+
+    }catch(exception){
+      //catch의 괄호 안에 입력하는 식별자가 예외 객체
+      //식별자 이름은 규칙에만 맞으면 된다
+      //일반적으로 e나 exception이라는 식별자를 사용합니다
+    }
+
+    //예외 정보 출력하기
+    //자바스크립트의 배열 크기가 한정되어 있다
+    //배열의 최대 크기는 4,294,967,295까지 가능합니다
+    try{
+      const array=new Array(999999999999999999)
+    }catch(exception){
+      console.log(exception)
+      console.log(`예외 이름:${exception.name}`)
+      console.log(`예외 메세지:${exception.message}`)
+    }
+
+    //예외 강제 발생
+    //예외를 강제로 발생시킬 때는 throw키워드를 사용합니다
+    //나만의 예외를 규정해서 강제로 예외 발생
+    //단순하게 예외를 발생시킵니다
+    //throw 문자열
+    //자세하게 예외를 발생시킵니다
+    //throw new Error(문자열)
+    
+    //예외 강제로 발생시키고 잡기
+    function divide(a,b){
+      if(b===0){
+        throw "0으로는 나눌 수 없습니다."
+      }
+      return a/b
+    }
+    try{
+      console.log(divide(10,2))
+      console.log(divide(10,0))
+    }catch(e){
+      console.log(e)
+    }
+    console.log("프로그램 종료")
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //05-02-02.html
+    //타이머 함수
+    //특정 시간마다 또는 특정 시간 이후에
+    //콜백 함수를 호출할 수 있는 타이머 함수들이 있습니다
+    //setTimeout(함수,시간) 
+    //- 특정 시간 후에 함수를 한 번 호출합니다
+    //setInterval(함수,시간)
+    //- 특정 시간마다 함수를 호출합니다
+    //두번째 매개 변수 시간: 밀리초로 단위가 사용된다
+    //1초=1000밀리초 m/s
+    setTimeout(()=>{
+      console.log("1초 후에 실행됩니다")
+    },1*1000)
+
+    let count=0
+    // setInterval(()=>{
+    //   console.log(`1초마다 실행됩니다(${count}번째)`)
+    //   count++
+    // },1*1000)
+
+    //타이머를 종료하고 싶을 때는
+    //clearTimeout(타이머_ID)
+    //setTimeout()함수로 설정한 타이머를 제거합니다
+    //clearInterval(타이머_ID)
+    //setInterval()함수로 설정한 타이머를 제거합니다
+    //타이머 ID는 setTimeout()함수와
+    //setInterval()함수를 호출할 때 리턴값으로 나오는 숫자입니다
+
+    let id=setInterval(()=>{
+      console.log(`1초마다 실행됩니다(${count}번째)`)
+      count++
+    },1*1000)
+    console.log("id",id)
+    setTimeout(()=>{
+      console.log("타이머 종료합니다.")
+      clearInterval(id)
+    },5*1000)
+
+    
+  </script>
+</body>
+</html>

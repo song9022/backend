@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //func001.html
+    //할일 목록 앱
+    const todos=["우유 구매","업무 메일 확인하기","필라테스 수업"]
+    //할일 목록 출력
+    for(const todo of todos){
+      console.log(todo)
+    }
+    //할일 추가하기(create)
+    todos.push("다이소 쇼핑")
+    //할일 목록 출력(read)
+    for(const todo of todos){
+      console.log(todo)
+    }
+    //할일 삭제하기(delete)
+    todos.splice(1,1)
+    //할일 목록 출력(read)
+    for(const todo of todos){
+      console.log(todo)
+    }
+    //할일 수정하기(update)
+    todos[0]="바나나 우유 구매"
+    //할일 목록 출력(read)
+    for(const todo of todos){
+      console.log(todo)
+    }
+    //같은 코드가 반복되면 좋은 코드가 아니다
+    //할일 목록 출력 기능을 하는 함수
+    function getTodos(){
+      for(const todo of todos){
+        console.log(todo)
+      }
+    }
+    //함수는 반복하는 코드를 블록에 정리하여
+    //필요 할때마다 호출 할 수 있다
+    //할일 목록 출력
+    getTodos()
+    //할일 추가하기
+    function pushTodos(todo){
+      todos.push(todo)
+    }
+    //할일 3번 추가 하기
+    pushTodos("점심 먹기")
+    pushTodos("커피 마시기")
+    pushTodos("간식 먹기")
+
+    //할일 삭제 하기
+    //인덱스, 값
+    function deleteTodo(index){
+      const start=todos.length
+      todos.splice(index,1)
+      const end=todos.length
+      return end<start
+    }
+    if(deleteTodo(0)){
+      console.log("삭제가 잘 되었습니다")
+    }else{
+      console.log("무언가 잘못 되었습니다")
+    }
+    getTodos()
+  </script>
+</body>
+</html>

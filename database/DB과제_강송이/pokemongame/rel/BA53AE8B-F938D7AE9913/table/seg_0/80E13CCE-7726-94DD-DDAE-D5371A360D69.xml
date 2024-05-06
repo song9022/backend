@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80E13CCE-7726-94DD-DDAE-D5371A360D69" name="Trade">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>2E842796-DB53-8C67-22F1-C64037A5F445</importedID>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="t_id" id="6D929D3F-FD30-9F65-5FE8-01A29C9B25F0">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>142CD1DC-50EC-AE9C-CC3E-DDD964121B72</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="t_date" id="3CDA9D86-EB21-3935-7611-1EC858B41A4B">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:34:13 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_price" id="ACBEF753-1E12-13C9-92B9-C1EC8B5D22EF">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:34:13 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_player_id" id="6A0D536F-ED85-7B08-0A68-B1E27401CB9F">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>F2FD96FA-122F-B046-F073-CC8316CFE3EC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFA2CDE1-9F85-1462-8040-58891E1308A2" referredColumn="BA5581A5-CB5B-6B98-26AA-C9C5185C49F0"/>
+</associations>
+</Column>
+<Column name="shop_shop_id" id="42990FC9-1368-CDFC-8762-D9B93C55EE0D">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>892AA32E-72BE-4025-F338-7238197644BA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDF8771A-7736-A633-C867-ED5345E17733" referredColumn="BD013AD3-7A7E-8CAE-9E91-6D98DC820837"/>
+</associations>
+</Column>
+<Column name="Region_region_id" id="E368969B-62AE-1B46-3DA0-D854180C4DD9">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:19:31 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4540C60-2AAC-7F4B-C37D-505DD9AE22FE" referredColumn="6BA2DC8C-DEA8-8957-09E3-086985B5CF7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2A11725-B93C-0FDB-764C-B63A40C14C17" name="transaction_PK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<importedID>ADA1A293-0AD4-1696-9B26-E4F1D03D241D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D929D3F-FD30-9F65-5FE8-01A29C9B25F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="067BDE03-BFBD-564B-323C-341BD8DAD5BC" name="transaction_player_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A0D536F-ED85-7B08-0A68-B1E27401CB9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="001CF816-0ED1-B5C5-2DF2-62DD79CBA250" name="transaction_shop_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 13:39:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42990FC9-1368-CDFC-8762-D9B93C55EE0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F06324B-4BF7-1645-BB55-A326F3B04BFB" name="transaction_Region_FK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:19:31 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E368969B-62AE-1B46-3DA0-D854180C4DD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

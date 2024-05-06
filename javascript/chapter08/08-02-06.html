@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //08-02-06.html
+    //게더와 세터
+    //속성을 읽고 쓸 수 있는 메소드를 만들어서 제공한다
+    class Square{
+
+      #length
+
+      constructor(length){
+        this.setLength(length)
+      }
+
+      setLength(value){
+        if(value<=0){
+          throw "길이는 0보다 커야 합니다."
+        }
+        this.#length=value
+      }
+      getLength(){
+        return this.#length
+      }
+      //정사각형의 둘레를 구하는 메소드
+      getPerimeter(){
+        return 4*this.#length
+      }
+      //정사각형의 넓이를 구하는 메소드
+      getArea(){
+        return this.#length*this.#length
+      }
+    }
+  </script>
+</body>
+</html>

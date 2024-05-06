@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //08-02-04.html
+    //private 속성과 메소드
+    class Square{
+      constructor(length){
+        if(length<=0){
+          throw "길이는 0보다 커야 합니다."
+        }
+        this.length=length
+      }
+      //정사각형의 둘레를 구하는 메소드
+      getPerimeter(){
+        return 4*this.length
+      }
+      //정사각형의 넓이를 구하는 메소드
+      getArea(){
+        return this.length*this.length
+      }
+    }
+    try{
+      const square=new Square(-10)
+      console.log(`정사각형의 둘레:${square.getPerimeter()}`)
+      console.log(`정사각형의 넓이:${square.getArea()}`)
+    }catch(e){
+      console.log(e)
+    }
+
+    //길이라는 것은 음수가 나올 수 없는 값입니다
+    //이런 문제를 막는 방법중에 하나는 예외를 발생시키는 거다
+
+    //length속성을 직접 변경할때에는 작동하지 않는다
+    const s=new Square(10)
+    s.length=-10
+    console.log(`정사각형의 둘레:${square.getPerimeter()}`)
+    console.log(`정사각형의 넓이:${square.getArea()}`)
+    //속성을 직접 접근하는 방식은 문제가 많으므로
+    //나온 문법이 private 속성과 메소드입니다
+    /*
+      class 클래스이름{
+        #속성 이름
+        #메소드 이름(){
+
+        }
+      }
+    */
+    //#이 붙어 있는 속성과 메소드는 모두 private 속성과 메소드다
+  </script>
+</body>
+</html>

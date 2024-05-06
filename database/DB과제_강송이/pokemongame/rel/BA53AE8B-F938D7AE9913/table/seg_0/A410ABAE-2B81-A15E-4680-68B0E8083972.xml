@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A410ABAE-2B81-A15E-4680-68B0E8083972" name="Region">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:11:42 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="region_id" id="6BA2DC8C-DEA8-8957-09E3-086985B5CF7D">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:12:13 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="DEC3F981-1FC3-7595-A4FA-CC1A3E0AF885">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:12:13 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78F789B9-10D2-EAA8-2DFE-A5AA0B11A173" name="Region_PK">
+<createdBy>songyi</createdBy>
+<createdTime>2024-05-03 14:12:13 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA2DC8C-DEA8-8957-09E3-086985B5CF7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

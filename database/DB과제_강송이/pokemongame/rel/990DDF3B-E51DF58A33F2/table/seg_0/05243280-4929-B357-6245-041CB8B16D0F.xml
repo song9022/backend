@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="05243280-4929-B357-6245-041CB8B16D0F" name="battle">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:21:39 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="battle_id" id="5D42519A-6831-D12C-9960-7BF2D6FF8F2C">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:22:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="result" id="A8C5B97E-2D3F-9FAE-33CB-07D901249731">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:23:12 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pokemon_pokemon_id" id="7E2C56C5-0CAB-5F24-C417-54E7CF94606C">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:28:23 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C29ACACD-EE95-FDF5-D035-436D6DBB324A" referredColumn="10F6FC22-52E2-BA06-140C-3E899DE98227"/>
+</associations>
+</Column>
+<Column name="player_player_id" id="9B64449F-EBBF-D60B-3FE1-E38A5AB99630">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:28:32 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B27F4082-8210-BD25-2CC0-3892A6B45BB4" referredColumn="6E1E206A-DB8B-4ADE-4525-F4F2DC4EE4CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E00D914-75FD-A6D8-33D8-9460E8501A3E" name="battle_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:22:05 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D42519A-6831-D12C-9960-7BF2D6FF8F2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CAEA14D-81C1-3A34-131D-B3FE27BF0896" name="battle_pokemon_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:28:23 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E2C56C5-0CAB-5F24-C417-54E7CF94606C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="397092ED-4049-57D1-0773-3EF9CFAD565B" name="battle_player_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:28:32 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B64449F-EBBF-D60B-3FE1-E38A5AB99630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

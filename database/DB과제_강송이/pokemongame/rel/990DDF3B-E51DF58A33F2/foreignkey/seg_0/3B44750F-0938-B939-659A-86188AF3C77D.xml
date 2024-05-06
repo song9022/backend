@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3B44750F-0938-B939-659A-86188AF3C77D" containerWithKeyObject="71ED5012-A93D-C3EC-F25F-4D28D0134B7B" localFKIndex="163F400E-353B-3BF2-B501-E4262485AD41" name="skill_pokemon_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:27:22 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<referredTableLongName>pokemon</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>476875F8-E7CB-5E64-93DD-C5BA0F2562A4</referredTableID>
+<keyObject>8CC0F269-13D4-5444-845F-409422035D5F</keyObject>
+<referredKeyID>8CC0F269-13D4-5444-845F-409422035D5F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>pokemon_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

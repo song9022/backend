@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //chapter07/07-01.html
+    //구문 오류와 예외
+    //오류의 2가지
+    //프로그램 실행 전에 발생하는 오류 - 구문 오류
+    //프로그램 실행 중에 발생하는 오류 - 예외 또는 런타임 오류
+    
+    //구문 오류
+    // console.log("#프로그램이 시작되었습니다")
+    // console.log("괄호를 닫지 않는 실수를 했습니다"
+    
+    //예외
+    // console.log("#프로그램이 시작되었습니다")
+    // console.rog("log를 rog로 잘못 입력했습니다")
+
+    //기본 예외 처리
+    //querySelector()메소드로 문서 객체를 추출한 뒤
+    //textContent속성에 글자를 할당하는 코드입니다
+    //h1태그가 없습니다. 따라서 예외가 발생합니다
+    //조건문으로 예외처리 - 기본 예외 처리
+    const h1=document.querySelector("h1")
+    if(h1){
+      h1.textContent="안녕하세요"
+    }else{
+      console.log("h1 태그를 추출할 수 없습니다")
+    }
+
+    //고급 예외 처리
+    //예외를 조금 더 쉽게 처리 할수 있는 try catch finally구문
+    /*
+      try{
+        //예외가 발생할 가능성이 있는 코드
+      }catch(exception){
+        //예외가 발생했을 때 실행할 코드
+      }finally{
+        //무조건 실행할 코드
+        //finally블록은 생략 가능하다
+      }
+    */
+    try{
+      // willExcept.byeBye()
+      console.log("try 구문의 마지막 줄")
+    }catch(exception){
+      console.log("catch 구문의 마지막 줄")
+    }finally{
+      //예외의 발생 여부와 상관없이 무조건 실행됩니다
+      console.log("finally 구문의 마지막 줄")
+    }
+  </script>
+  <!-- <h1></h1> -->
+</body>
+</html>

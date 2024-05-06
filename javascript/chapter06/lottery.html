@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //lottery.html
+    //1~45까지 정수 추출
+    let num=Math.floor(Math.random()*45+1)
+    // console.log(num)
+    //6개를 뽑아서 배열 저장
+
+    //중복 번호가 뽑힐수도 있다
+    
+    //1~45배열에서 splice()메소드를 이용해서
+    //뽑으면서 배열에서 없애지기 때문에
+
+    //랜덤으로 6개를 뽑는데 중복을 검사해서
+    //중복된 번호가 뽑히면 더 뽑겠다
+    let nums=[]
+    let b=true
+    while(nums.length<6){
+      let num=Math.floor(Math.random()*45+1)
+      //중복 검사
+      for(let n of nums){
+        if(n===num){
+          b=false
+        }
+      }
+      if(b){
+        nums.push(num)
+        b=!b
+      }else{
+        b=!b
+      }
+    }
+    console.log(nums)
+    //정렬
+    nums=nums.sort((a, b) => a - b)
+    console.log(nums)
+  </script>
+</body>
+</html>

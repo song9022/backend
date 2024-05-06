@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //02-01.html
+    //기본 자료형
+    //자료(data)-프로그래밍에서 프로그램이 처리할 수 잇는 모든 것
+    //자료형(data type)-자료 형태에 따라 나눠 놓은 것
+    //가장 기본적이면서도 많이 사용하는 자료형은
+    //숫자(number),문자열(string),불(boolean)자료형입니다
+
+    //문자열 자료형
+    //문자들의 집합을 문자열이라고 한다
+    //문자가 하나든 여러 개든 모두 문자열 자료형
+
+    //문자열 만들기
+    //자바스크립트 2가지 방법으로 문자열을 생성
+    //1. 큰따옴표를 사용
+    //2. 작은따옴표를 사용
+    console.log('안녕하세요')
+    console.log("안녕하세요")
+
+    //내부에 작은따옴표를 사용하고 싶다면
+    //외부에 큰따옴표를 사용하고
+    //반대로 내부에 큰따옴표를 사용하고 싶으면
+    //외부에 작은따옴표를 사용합니다
+    console.log('This is "string"')
+    console.log("This is 'string'")
+    console.log("<img src='apple.jpg'>")
+    //이스케이프 문자(\)를 사용하여 따옴표를 
+    //문자 그대로 사용할 수 있습니다
+    console.log('This is \'string\'')
+    console.log("This is \"string\"")
+    //이스케이프 문자의 여러 가지 특수 기능
+    //\n:줄바꿈을 의미합니다
+    //\t:탭을 의미합니다
+    //\\:역슬래시(\) 그 자체를 의미합니다
+    //\n 부분에서 줄바꿈이 일어납니다
+    console.log("동해물과 백두산이 \n마르고 닳도록")
+    //\t부분에 탭이 들어 갑니다
+    console.log("이름\t나이\t지역")
+    //역슬래시를 나타내려면 \\형태로 사용해야 한다
+    console.log("\\ \\ \\ \\")
+
+    //문자열 연산자
+    //덧셈 기호(+)를 사용하면 문자여을 연결할 수 있다
+    //덧셈 기호를 문자열 연결 연산자라고 부른다
+    //문자열+문자열 -> 문자열 연결 연산자
+    console.log("가나다"+"라마"+"바사아"+"자차카타")
+
+    //문자열 내부의 문자 하나를 선택할 때는 
+    //"문자 선택 연산자"를 사용
+    //문자열[인덱스값]
+    console.log("안녕하세요[0]")
+    console.log("안녕하세요[1]")
+    console.log("안녕하세요[2]")
+
+    //문자열 길이 구하기
+    //문자열 내부의 문자 개수를 문자열 길이(length)
+    //length 속성을 사용합니다
+    //인스턴스 변수를 가르키는 많은 용어들
+    //속성 properties, 필드 field, 인스턴스 변수
+    console.log("안녕하세요".length)
+    console.log("자바스크립트".length)
+    console.log("".length)
+
+    //구문 오류(컴파일 에러)
+    // console.log("This is "string"")
+
+    //숫자 자료형
+    //자바스크립트는 소수점이 있는 숫자와
+    //없는 숫자를 모두 같은 자료형으로 인식합니다
+    console.log(42)
+    console.log(42.42)
+
+    //숫자 연산자
+    //숫자 자료형은 숫자 연산자로 기본적인 사칙 연산을 할수 있다
+    //+ , -, *, / - 더하기, 빼기, 곱하기, 나누기
+    console.log(5+3*2)//11
+    //덧셈을 먼저 계산하고 싶으면 괄호를 사용한다
+    console.log((5+3)*2)
+
+    //나머지 연산 - % 연산자
+    //좌변을 우변으로 나눈 나머지를 출력
+    console.log(10%2)
+    console.log(10%3)
+    console.log(10%4)
+
+    //불 자료형
+    //Boolean , 불린, 불
+    //참과 거짓 값을 표현할 때 불 자료형
+    //불 자료형의 자료는 true와 false 2가지 뿐이다
+    console.log(true)
+    console.log(false)
+
+    //두 대상을 비교할 수 있는 비교 연산자를 사용해도
+    //불을 만들 수 있다
+    //비교 연산자
+    //=== or == - 양쪽이 같다
+    //!== or != - 양쪽이 다르다
+    // > - 왼쪽이 더 크다
+    // < - 오른쪽이 더 크다
+    // >= - 왼쪽이 더 크거나 같다
+    // <= - 오른쪽이 더 크거나 같다
+    console.log(52>273)
+    console.log(52<273)
+    console.log(10<10)
+    //문자열 자료형도 비교 가능
+    //문자열 자료형은 사전의 앞쪽에 있을수록 값이 작다
+    console.log("가방"<"하마")
+    //불 자료형은 조건문에 활용
+
+    //불 부정 연산자 === 논리 부정 연산자
+    // !기호를 사용하면 참을 거짓으로, 거짓을 참으로 바꿉니다
+    console.log(!true)
+    console.log(!false)
+    console.log(!10>2)
+
+    //불 논리합/논리곱 연산자
+    // && - 논리곱 연산자 - and - 그리고
+    // || - 논리합 연산자 - or - 또는
+    console.log(true&&true)
+    console.log(false&&true)
+    console.log(true&&false)
+    console.log(false&&false)
+    console.log(true||true)
+    console.log(true||false)
+    console.log(false||true)
+    console.log(false||false)
+
+    //자료형 검사
+    const c=0
+    let l=0
+    l="string"
+    l=42>42
+    //자료형을 확익할 때는 typeof 연산자 - 단항 연산자
+    console.log(typeof("str"))
+    //string은 문자열을 의미합니다
+    console.log(typeof(42))
+    //number은 숫자를 의미합니다
+    console.log(typeof(true))
+    //boolean은 불린을 의미합니다
+    
+    //typeof 연산자 뒤에 괄호가 생략 가능합니다
+    console.log(typeof "str")
+    console.log(typeof 42)
+    
+    //typeof 연산자는 문자열과 비교해서 자료형을 확인합니다
+    console.log(typeof 42==="number")
+    console.log(typeof true==="boolean")
+    console.log(typeof "I like javascript"!=="boolean")
+    console.log(typeof "I like javascript"==="string")
+
+    //일반적으로 typeof연산자는 괄호를 사용합니다
+    //typeof 연산자 뒤에 괄호가 없어도 되지만
+    //가급적 사용해 주세요
+
+    //typeof 연산자는 결과로 8가지 중에 하나를 출력합니다
+    //string, number, boolean, undefined, function, object
+    //symbol, bigint
+
+    //템플릿 문자열
+    //c언어 스타일로 템플릿 문자열
+    //java같은 경우
+    //System.out.println("%s, %d","string",12)
+    
+    //문자열 내부에 표현식(간단한 자바스크립트 코드)을 
+    //삽입할 때 문자열 연결 연산자(+)를 사용해야 했다
+    console.log("표현식 273+52의 값은 "+(273+52)+"입니다...!")
+
+    //백틱(`) 기호는 키보드의 숫자 1키 왼쪽에 있습니다
+    //작은따옴표와 혼동하지 않도록 주의하세요
+    
+    //템플릿(templet) 문자열은 백틱(`)기호로 감싸 만듭니다
+    //문자열 내부에 ${...}기호를 사용하여 표현식을 넣습니다
+    console.log(`표현식 273+52의 값은 ${273+52}입니다...!`)
+
+    //== 연산자와 != 연산자
+    // ===, !== 연산자는 값과 자료형까지 비교
+    // ==, != 값만 비교
+    console.log("1=='1'",1=="1")
+    //값만 비교 하기 때문에 값이 같으므로 : true
+    console.log("1==='1'",1==="1")
+    //값과 자료형까지 비교하기 때문에 : false
+    console.log(`false==0 :${false==0}`)
+    //결과는 true
+    //true , false 필요할 때 숫자형 1, 0으로 자동 변환
+    //true -> 1, false -> 0
+    console.log(true+true)//2
+
+
+  
+
+
+
+
+
+
+    
+  </script>
+</body>
+</html>

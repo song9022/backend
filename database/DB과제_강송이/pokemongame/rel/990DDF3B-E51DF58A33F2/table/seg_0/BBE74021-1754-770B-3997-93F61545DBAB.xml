@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBE74021-1754-770B-3997-93F61545DBAB" name="city">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:21:03 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="city_id" id="A387F0B5-BC39-514E-CE66-7C13083A9EFF">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:21:27 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="52E59AFD-86CC-3491-5C9B-214C5CA73569">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:21:27 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region_region_id" id="498B5C2A-DAFD-0384-1808-2F322364818B">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:27:55 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE48ADED-7D77-93C4-AF5E-40DD59597BC2" referredColumn="E4BC6FA5-79BE-CDDB-B399-F1D55C4A5A28"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FBDB1056-A427-0C00-AEB7-B3C6287EA310" name="city_PK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:21:27 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A387F0B5-BC39-514E-CE66-7C13083A9EFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4773D09E-758E-996A-BE48-25B2B6AE90AE" name="city_region_FK">
+<createdBy>ITPS</createdBy>
+<createdTime>2024-04-30 07:27:55 UTC</createdTime>
+<ownerDesignName>pokemongame</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="498B5C2A-DAFD-0384-1808-2F322364818B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
